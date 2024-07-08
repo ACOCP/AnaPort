@@ -1,0 +1,288 @@
+.Header .base {
+    z-index: 90;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #FFFFFF;
+    width: 98px;
+    height: 98px;
+    -webkit-transition: all 1s cubic-bezier(0.5, -0.75, 0.05, 1);
+    transition: all 1s cubic-bezier(0.5, -0.75, 0.05, 1);
+    border-bottom-right-radius: 100%;
+    cursor: pointer;
+  }
+  .Header .base .menu {
+    z-index: 100;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    border-bottom-right-radius: 200px;
+    cursor: pointer;
+    -webkit-transition: all 1s cubic-bezier(0.5, -0.75, 0.05, 1), background-color 1s ease;
+    transition: all 1s cubic-bezier(0.5, -0.75, 0.05, 1), background-color 1s ease;
+  }
+  .Header .base .menu .icon {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-100%, -100%);
+            transform: translate(-100%, -100%);
+  }
+  .Header .base .menu .icon:before, .Header .base .menu .icon:after {
+    content: '';
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: top 0.5s ease 0.5s, background-color 0.75s ease 0.25s, -webkit-transform 0.5s ease;
+    transition: top 0.5s ease 0.5s, background-color 0.75s ease 0.25s, -webkit-transform 0.5s ease;
+    transition: top 0.5s ease 0.5s, transform 0.5s ease, background-color 0.75s ease 0.25s;
+    transition: top 0.5s ease 0.5s, transform 0.5s ease, background-color 0.75s ease 0.25s, -webkit-transform 0.5s ease;
+  }
+  .Header .base .menu .icon .bar, .Header .base .menu .icon:before, .Header .base .menu .icon:after {
+    position: absolute;
+    height: 5px;
+    left: 0px;
+    right: 0px;
+    border-radius: 5px;
+    background-color: #363636;
+  }
+  .Header .base .menu .icon .bar {
+    -webkit-transition: opacity 0s linear 0.5s, background-color 0.75s ease 0.25s;
+    transition: opacity 0s linear 0.5s, background-color 0.75s ease 0.25s;
+    opacity: 1;
+    top: 10px;
+  }
+  .Header .base .menu .icon:before {
+    top: 0px;
+  }
+  .Header .base .menu .icon:after {
+    top: initial;
+    top: 20px;
+  }
+  .Header .base .icons {
+    z-index: 98;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .Header .base .icons > * {
+    position: absolute;
+    font-size: 40px;
+    color: #363636;
+    -webkit-transition: 0.3s cubic-bezier(0.5, -0.25, 0.05, 1);
+    transition: 0.3s cubic-bezier(0.5, -0.25, 0.05, 1);
+  }
+  .Header .base .icons .fa-user {
+    top: 35px;
+    left: 0px;
+    -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+  }
+  .Header .base .icons .fa-folder-open-o {
+    top: 0px;
+    left: 0px;
+    color: #fff;
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+  }
+  .Header .base .icons .fa-address-card-o {
+    top: 0px;
+    left: 35px;
+  }
+  .Header .base .section {
+    z-index: 96;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 0px;
+    width: 0px;
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  .Header .base .section .cover1 {
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+  .Header .base .section .cover1,
+  .Header .base .section .cover1 .cover2,
+  .Header .base .section .cover1 .cover2 .content {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+  }
+  .Header .base .section .cover1,
+  .Header .base .section .cover1 .cover2 {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-100%, -100%) rotate(4deg);
+            transform: translate(-100%, -100%) rotate(4deg);
+    overflow: hidden;
+    pointer-events: none;
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  .Header .base .section .cover1 .cover2 {
+    -webkit-transform: translate(50%, -50%) rotate(-8deg);
+            transform: translate(50%, -50%) rotate(-8deg);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+  }
+  .Header .base .section .cover1 .cover2 .content {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: #e60023;
+    top: 100%;
+    left: 0%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: background-color 0s, width 1.5s cubic-bezier(0.5, -0.5, 0.05, 1) 0s, height 1.5s cubic-bezier(0.5, -0.5, 0.05, 1) 0s;
+    transition: background-color 0s, width 1.5s cubic-bezier(0.5, -0.5, 0.05, 1) 0s, height 1.5s cubic-bezier(0.5, -0.5, 0.05, 1) 0s;
+    pointer-events: auto;
+  }
+  .Header .base .section-static {
+    z-index: 94;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transition: width 1s cubic-bezier(0.5, -0.75, 0.05, 1), height 1s cubic-bezier(0.5, -0.75, 0.05, 1);
+    transition: width 1s cubic-bezier(0.5, -0.75, 0.05, 1), height 1s cubic-bezier(0.5, -0.75, 0.05, 1);
+  }
+  .Header .base .section-static:hover {
+    background-color: #EAEAEA;
+  }
+  .Header .base .section-static.top {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    border-bottom-right-radius: 400px;
+  }
+  .Header .base .section-static.bottom {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    border-bottom-right-radius: 400px;
+  }
+  .Header .base.close {
+    width: 300px;
+    height: 300px;
+    -webkit-transition: all 1.25s cubic-bezier(0.5, 0, 0.05, 1.75);
+    transition: all 1.25s cubic-bezier(0.5, 0, 0.05, 1.75);
+  }
+  .Header .base.close .menu {
+    width: 150px;
+    height: 150px;
+    -webkit-transition: all 1s cubic-bezier(0.5, 0, 0.05, 1.75), background-color 1s ease;
+    transition: all 1s cubic-bezier(0.5, 0, 0.05, 1.75), background-color 1s ease;
+    background-color: #363636;
+  }
+  .Header .base.close .menu .icon .bar, .Header .base.close .menu .icon:before, .Header .base.close .menu .icon:after {
+    background-color: #FFFFFF;
+  }
+  .Header .base.close .menu .icon .bar {
+    opacity: 0;
+  }
+  .Header .base.close .menu .icon:before, .Header .base.close .menu .icon:after {
+    -webkit-transition: top 0.5s linear, background-color 0.75s ease 0.25s, -webkit-transform 0.5s ease 0.5s;
+    transition: top 0.5s linear, background-color 0.75s ease 0.25s, -webkit-transform 0.5s ease 0.5s;
+    transition: top 0.5s linear, transform 0.5s ease 0.5s, background-color 0.75s ease 0.25s;
+    transition: top 0.5s linear, transform 0.5s ease 0.5s, background-color 0.75s ease 0.25s, -webkit-transform 0.5s ease 0.5s;
+  }
+  .Header .base.close .menu .icon:before {
+    top: 10px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .Header .base.close .menu .icon:after {
+    top: 10px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .Header .base.close .icons {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .Header .base.close .icons > * {
+    position: absolute;
+    font-size: 40px;
+    color: #363636;
+    -webkit-transition: 0.3s cubic-bezier(0.5, 0, 0.05, 1.75) 0.7s;
+    transition: 0.3s cubic-bezier(0.5, 0, 0.05, 1.75) 0.7s;
+    pointer-events: none;
+  }
+  .Header .base.close .icons .fa-user {
+    top: 35px;
+    left: 200px;
+  }
+  .Header .base.close .icons .fa-folder-open-o {
+    top: 141px;
+    left: 141px;
+    color: #fff;
+    -webkit-transition-delay: 0.65s;
+            transition-delay: 0.65s;
+  }
+  .Header .base.close .icons .fa-address-card-o {
+    top: 200px;
+    left: 35px;
+    -webkit-transition-delay: 0.8s;
+            transition-delay: 0.8s;
+  }
+  .Header .base.close .section .cover1 {
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+  .Header .base.close .section .cover1,
+  .Header .base.close .section .cover1 .cover2,
+  .Header .base.close .section .cover1 .cover2 .content {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+  }
+  .Header .base.close .section .cover1,
+  .Header .base.close .section .cover1 .cover2 {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-100%, -100%) rotate(16deg);
+            transform: translate(-100%, -100%) rotate(16deg);
+    overflow: hidden;
+    -webkit-transition: -webkit-transform 0.5s ease-in 0.5s;
+    transition: -webkit-transform 0.5s ease-in 0.5s;
+    transition: transform 0.5s ease-in 0.5s;
+    transition: transform 0.5s ease-in 0.5s, -webkit-transform 0.5s ease-in 0.5s;
+  }
+  .Header .base.close .section .cover1 .cover2 {
+    -webkit-transform: translate(50%, -50%) rotate(-32deg);
+            transform: translate(50%, -50%) rotate(-32deg);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+  }
+  .Header .base.close .section .cover1 .cover2 .content {
+    border-radius: 100%;
+    background-color: #e60023;
+    top: 100%;
+    left: 0%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: background-color 0s, width 1.1s cubic-bezier(0.5, 0, 0.05, 1.75) 0.25s, height 1.1s cubic-bezier(0.5, 0, 0.05, 2) 0.25s;
+    transition: background-color 0s, width 1.1s cubic-bezier(0.5, 0, 0.05, 1.75) 0.25s, height 1.1s cubic-bezier(0.5, 0, 0.05, 2) 0.25s;
+  }
+  .Header .base.close .section .cover1 .cover2 .content:hover {
+    background-color: #DD1350;
+  }
+  .Header .base.close .section-static {
+    width: 300px;
+    height: 300px;
+    -webkit-transition: width 1.25s cubic-bezier(0.5, 0, 0.05, 2), height 1.25s cubic-bezier(0.5, 0, 0.05, 2);
+    transition: width 1.25s cubic-bezier(0.5, 0, 0.05, 2), height 1.25s cubic-bezier(0.5, 0, 0.05, 2);
+  }
